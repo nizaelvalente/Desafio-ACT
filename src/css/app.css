@@ -4,17 +4,13 @@
     --surface-B100: #000000;
     --surface-B90: #111111;
     --surface-B80: #333333;
-    --surface-R100: #ff0000;
-
     --text-A100: #000000;
     --text-A90: #111111;
     --text-A80: #333333;
     --text-B10: #F6F6F5;
-
     --shadow-B100: #000000;
     --shadow-B90: #111111;
     --shadow-B80: #333333;
-
 }
 
 * {
@@ -30,13 +26,19 @@
 
 body{
     background-color: var(--shadow-B100);
-    /* min-height: 100vh; */
 }
 
 .main {
     display: grid;
-    margin-top: 116px;
     padding: 20px;
+}
+
+.no-result {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    place-content: center;
+    color: var(--text-B10);
 }
 
 .card-character {
@@ -105,17 +107,13 @@ body{
 
 .domics {
     width: 100%;
-    /* background-color: bisque; */
     display: grid;
     grid-template-columns: 1fr;
     margin: 20px 0;
 }
 
 .domics-item{
-    /* height: 100px; */
-    /* width: 100%; */
     border: solid 2px black;
-    /* background-color: cadetblue; */
     border: solid 2px  white;
     margin: 5px;
     padding: 10px 5px;
@@ -127,7 +125,6 @@ body{
 @media screen and (min-width: 710px) {
     .domics {
         width: 100%;
-        /* background-color: bisque; */
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -142,7 +139,6 @@ body{
 @media screen and (min-width: 1035px) {
     .domics {
         width: 100%;
-        /* background-color: bisque; */
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }

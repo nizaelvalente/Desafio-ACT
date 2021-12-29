@@ -6,24 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/app.css">
-    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/header.css">
-    <script type="text/javascript" src="./js/angular.min.js"></script>
+    <script src="./js/angular.min.js"></script>
     <script src="./js/angular.route.js"></script>
     <script src="./js/app.js"></script>
     <script src="./routers/characters.router.js"></script>
-    <script src="./routers/details.router.js"></script>
-    <script src="controllers/characters.controller.js"></script>
-    <script src="controllers/details.controller.js"></script>
-    <!-- <script src="controllers/search.controller.js"></script> -->
+    <script src="./controllers/characters.controller.js"></script>
+    <script src="./controllers/details.controller.js"></script>
 
-    <title>Document</title>
+    <title>ACT - Digital</title>
 </head>
 
 <body ng-app="marvelCharacters">
     <div id="root">
+        <div ng-include src="'components/header.html'"></div ng-include>
+       
         <div ng-view></div>
-        <div ng-include src="'components/footer.html'"></div ng-include>
     </div>
 </body>
 

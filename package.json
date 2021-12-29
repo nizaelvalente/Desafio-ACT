@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.1.0"
+  },
+  "name": "marvel",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nizaelvalente/Desafio-ACT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nizaelvalente/Desafio-ACT/issues"
+  },
+  "homepage": "https://github.com/nizaelvalente/Desafio-ACT#readme",
+  "description": ""
+}
