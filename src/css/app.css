@@ -28,6 +28,13 @@ body{
     background-color: var(--shadow-B100);
 }
 
+.detailsContainer {
+   padding-top: 50px;
+}
+.detailsContainer h2 {
+    margin-top: 20px;
+    color: var(--text-B10);
+ }
 .main {
     display: grid;
     padding: 20px;

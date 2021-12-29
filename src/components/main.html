@@ -1,12 +1,11 @@
 <div class="content" ng-controller="charactersController">
     <div class="search-container">
         <div class="search">
-            <input type="text" ng-model="personagemName" placeholder="Bucar personagem">
+            <input type="text" ng-model="personagemName" placeholder="Buscar personagem">
             <img src="./assets/search.svg" alt="search" ng-click="searchName(personagemName)">
         </div>
     </div>
     <main class="main">
-        <!-- {{characters.length}} -->
         <div class="no-result" ng-if="!characters.length">
             Sem resultados.
         </div>
