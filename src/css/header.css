@@ -1,0 +1,62 @@
+.header {
+    background-color: var(--shadow-B90);
+    border-bottom: solid 1px var(--shadow-B80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 117px;
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1001;
+}
+
+.logo-marvel {
+    height: 100%;
+    margin-right: 20px;
+}
+
+.logo-marvel img {
+    height: 100%;
+    /* height: 50px; */
+}
+
+.search {
+    flex-grow: 100;
+    display: flex;
+    align-items: center;
+    background-color: var(--surface-B80);
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.search input {
+    margin-right: 10px;
+    background-color: var(--surface-B80);
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: var(--text-B10);
+}
+
+@media screen and (min-width: 710px) {
+    
+    .header {
+        align-items: center;
+        background-color: var(--shadow-B90);
+        border-bottom: solid 1px var(--shadow-B80);
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        justify-content: center;
+        padding: 5px 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1001;
+    }
+    
+}

@@ -1,0 +1,12 @@
+.footer-container {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+
+}

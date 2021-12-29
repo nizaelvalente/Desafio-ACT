@@ -1,0 +1,14 @@
+<div class="detailsContainer">
+    <h3>London is the capital city of England.</h3>
+    <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <div class="cont-img">
+        <img src="{{characterImg}}" alt="">
+        <h1 ng-controller="detailsController">{{characterName}}</h1>
+    </div>
+    <h2>Quadrinhos</h2>
+    <div class="domics">
+        <div class="domics-item" ng-repeat="it in characterId">
+            <p>{{it.name}}</p>
+        </div>
+    </div>
+</div>

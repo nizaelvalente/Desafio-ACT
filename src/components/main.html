@@ -1,0 +1,14 @@
+<div class="content">
+    <div ng-include src="'components/header.html'"></div ng-include>
+        <main class="main" ng-controller="charactersController">
+            <a ng-repeat="character in characters" id="{{character.id}}" href="#!/details/{{character.id}}">
+                <div class="card-character">
+                    <img class="character-picture" src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}"
+                        alt="character">
+                    <h3 class="character-name">
+                        {{character.name}}
+                    </h3>
+                </div>
+            </a>
+        </main>
+</div>
