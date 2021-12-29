@@ -1,5 +1,5 @@
 angular.module('marvelCharacters').controller("detailsController", function ($scope, $http, $route) {
-    $http.get(`https://gateway.marvel.com:443/v1/public/characters/${$route.current.params.id}?ts=1&apikey=5a237863b3cc2061003cbbc4fe20dc06&hash=bd4b447a65ef5d6b174f87cf9db6d2db`).then(function (data) {
+    $http.get(`https://gateway.marvel.com:443/v1/public/characters/${$route.current.params.id}?ts=1640814676774&apikey=9de9e3ed3e077ed85e20ad50e3e21d2d&hash=64b2185466d6dfd048f6726f3299cc32`).then(function (data) {
         $scope.characterId =  data.data.data.results[0].comics.items
         $scope.characterName =  data.data.data.results[0].name
         $scope.characterImg =  data.data.data.results[0].thumbnail.path+'.'+data.data.data.results[0].thumbnail.extension
