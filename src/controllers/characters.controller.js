@@ -1,11 +1,11 @@
 
 angular.module('marvelCharacters').controller("charactersController", function ($scope, $http) {
-    $http.get("https://gateway.marvel.com/v1/public/characters?ts=1&apikey=5a237863b3cc2061003cbbc4fe20dc06&hash=bd4b447a65ef5d6b174f87cf9db6d2db&limit=100").then(function (data) {
+    $http.get("https://gateway.marvel.com/v1/public/characters?ts=1640814676774&apikey=9de9e3ed3e077ed85e20ad50e3e21d2d&hash=64b2185466d6dfd048f6726f3299cc32&limit=100").then(function (data) {
         $scope.characters = data.data.data.results
     });
 
     $scope.searchName = function (name) {
-        let url = "https://gateway.marvel.com/v1/public/characters?ts=1&apikey=5a237863b3cc2061003cbbc4fe20dc06&hash=bd4b447a65ef5d6b174f87cf9db6d2db"
+        let url = "https://gateway.marvel.com/v1/public/characters?ts=1640814676774&apikey=9de9e3ed3e077ed85e20ad50e3e21d2d&hash=64b2185466d6dfd048f6726f3299cc32"
         if (name) {
             url += '&nameStartsWith=' + name;
         }
