@@ -9,7 +9,7 @@
         <div class="no-result" ng-if="!characters.length">
             Sem resultados.
         </div>
-        <a ng-repeat="character in characters | filter:personagemName" id="{{character.id}}" href="#!/details/{{character.id}}">
+        <a ng-repeat="character in characters" id="{{character.id}}" href="#!/details/{{character.id}}">
             <div class="card-character">
                 <img class="character-picture" src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}"
                     alt="character">
