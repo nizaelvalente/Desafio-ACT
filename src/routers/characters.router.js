@@ -1,8 +1,13 @@
-angular.module("marvelCharacters").config(function ($routeProvider) {
+app.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
             templateUrl: "components/main.html",
-            controller: "charactersController"
+            controller: "charactersController",
+            resolve:{
+                characters: function(marvelApi){
+                    return marvelApi.getcharacters()
+                }
+            }
 
         })
 
@@ -10,5 +15,10 @@ angular.module("marvelCharacters").config(function ($routeProvider) {
         .when("/details/:id", {
             templateUrl: "components/details.html",
             controller: "detailsController",
+            resolve:{
+                character: function(marvelApi,$route){
+                    return marvelApi.getcharacterId($route.current.params.id)
+                }
+            }
         });
 });
